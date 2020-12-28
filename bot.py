@@ -245,7 +245,7 @@ def user_check_routine(message):
 
 
 def check_number(number:str):
-    return bool(re.match(r'^\+38?1?\d{10}$', number)) if number.startswith('+') else bool(re.match(r'\d{10}$', number))
+    return bool(re.match(r'^\+38?1?\d{10}$', number)) if number.startswith('+') else bool(re.match(r'^0\d{9}$', number))
 
 
 bot.polling()
